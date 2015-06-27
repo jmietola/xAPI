@@ -30,7 +30,7 @@ namespace Microsoft.SqlServer.Dts.Samples
 
             // Add the Flat File connection
             ConnectionManager connectionManagerFlatFile = package.Connections.Add("FLATFILE");
-            connectionManagerFlatFile.ConnectionString = @"C:\Temp\FlatFile.txt";
+            connectionManagerFlatFile.ConnectionString = @"C:\Temp\FlatFile.csv";
             connectionManagerFlatFile.Name = "FlatFile";
             connectionManagerFlatFile.Properties["Format"].SetValue(connectionManagerFlatFile, "Delimited");
             connectionManagerFlatFile.Properties["ColumnNamesInFirstDataRow"].SetValue(connectionManagerFlatFile, true);
@@ -46,6 +46,12 @@ namespace Microsoft.SqlServer.Dts.Samples
             source.ComponentClassID = "DTSAdapter.FlatFileSource";
             CManagedComponentWrapper srcDesignTime = source.Instantiate();
             srcDesignTime.ProvideComponentProperties();
+
+            // The ProvideComponentProperties method creates a default output.
+            srcDesignTime.ProvideComponentProperties();
+            // Assign the connection manager.
+            source.RuntimeConnectionCollection[0].ConnectionManager =
+              DtsConvert.GetExtendedInterface(connectionManagerFlatFile);
             
             IDTSComponentMetaData100 scd = 
                 dataFlowTask.ComponentMetaDataCollection.New();

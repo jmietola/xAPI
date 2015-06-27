@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="6/25/2015 11:40:53 PM"
+  DTS:CreationDate="6/27/2015 8:34:35 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="EEPPINENKONE"
   DTS:CreatorName="EEPPINENKONE\Jouni"
-  DTS:DTSID="{E83C7350-02E8-4E33-A11B-08F60881FFBC}"
+  DTS:DTSID="{289929B9-3F1D-461D-B0E1-E8503D66B9D2}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="12.0.2430.0"
   DTS:LocaleID="1033"
-  DTS:ObjectName="{E83C7350-02E8-4E33-A11B-08F60881FFBC}"
-  DTS:VersionGUID="{8EB926FF-01ED-49CC-A214-95C802896E99}">
+  DTS:ObjectName="{289929B9-3F1D-461D-B0E1-E8503D66B9D2}"
+  DTS:VersionGUID="{775CA2E9-9C49-459D-8761-D1D386385842}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FlatFile]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2144059B-24B7-4F24-8B4B-3C406722B2BF}"
+      DTS:DTSID="{34D5FBF2-0679-48C0-BBBF-43ADE203A14A}"
       DTS:ObjectName="FlatFile">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -28,7 +28,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier=""
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\FlatFile.txt" />
+          DTS:ConnectionString="C:\Temp\FlatFile.csv" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
-      DTS:DTSID="{D84E9207-85EC-48A6-A316-C960729ECA06}"
+      DTS:DTSID="{CE5954D2-A520-48BA-A4EC-1628608083FE}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"

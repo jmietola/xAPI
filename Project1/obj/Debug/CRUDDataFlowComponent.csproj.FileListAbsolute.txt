@@ -3,3 +3,4 @@ C:\Users\Jouni\documents\visual studio 2013\Projects\Project1\Project1\bin\Debug
 C:\Users\Jouni\documents\visual studio 2013\Projects\Project1\Project1\bin\Debug\Project1.pdb
 C:\Users\Jouni\documents\visual studio 2013\Projects\Project1\Project1\obj\Debug\Project1.exe
 C:\Users\Jouni\documents\visual studio 2013\Projects\Project1\Project1\obj\Debug\Project1.pdb
+C:\Users\Jouni\documents\visual studio 2013\Projects\Project1\Project1\obj\Debug\CRUDDataFlowComponent.csprojResolveAssemblyReference.cache
